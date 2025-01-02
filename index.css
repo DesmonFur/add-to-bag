@@ -1,1 +1,63 @@
 /* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-container {
+  display: flex;
+  /* width: 494px; */
+  width: clamp(10rem, 50vw, 30.875rem);
+  justify-content: space-around;
+}
+.preview-img {
+  margin-top: 20px;
+  width: clamp(20px, 10vw, 6.5rem);
+}
+
+.featured-image-container {
+  width: clamp(160px, 50vw, 30.875rem);
+}
+.featured-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 94.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .product-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .preview-container {
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+    order: -1;
+    gap: 24px;
+    margin-left: auto;
+    width: 9.4375rem;
+  }
+}
