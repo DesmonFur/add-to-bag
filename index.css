@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+.medium-txt {
+  font-size: clamp(0.75rem, 2vw, 1.125rem);
+}
+
 .product-section {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,42 @@ body {
 .featured-image {
   width: 100%;
   margin: 0 auto;
+}
+
+.product-category {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a75ff;
+  text-transform: uppercase;
+}
+
+.product-title {
+  font-size: clamp(1rem, 4vw, 3rem);
+  font-weight: bold;
+  color: black;
+}
+
+.product-description {
+  opacity: 60%;
+  text-align: center;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.product-price {
+  font-size: clamp(0.75rem, 2.5vw, 2.5rem);
+  font-weight: bold;
+}
+
+.discount-pct {
+}
+
+.discount-price {
 }
 
 @media (min-width: 640px) {
