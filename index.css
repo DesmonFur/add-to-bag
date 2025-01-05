@@ -33,7 +33,7 @@ body {
   width: clamp(160px, 50vw, 30.875rem);
 }
 .featured-image {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -71,6 +71,25 @@ body {
 }
 
 .discount-price {
+}
+
+.product-size-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-sizes-container {
+  display: flex;
+}
+
+.add-btn {
+  background-color: #1a75ff;
+  color: #fff;
+  width: clamp(200px, 40vw, 533px);
+  /* width: 533px; */
+  padding: 16px 4px;
+  border-radius: 4px;
+  margin-top: 64px;
 }
 
 @media (min-width: 640px) {
