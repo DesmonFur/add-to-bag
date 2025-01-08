@@ -9,7 +9,7 @@ body {
 }
 
 .medium-txt {
-  font-size: clamp(0.75rem, 2vw, 1.125rem);
+  font-size: clamp(0.7rem, 3vw, 1.125rem);
 }
 
 .product-section {
@@ -45,7 +45,7 @@ body {
 }
 
 .product-title {
-  font-size: clamp(1rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: bold;
   color: black;
 }
@@ -62,15 +62,29 @@ body {
   margin-top: 30px;
 }
 
+.product-price-container {
+  display: flex;
+  align-items: center;
+}
 .product-price {
-  font-size: clamp(0.75rem, 2.5vw, 2.5rem);
+  font-size: clamp(0.9rem, 2.5vw, 2.5rem);
   font-weight: bold;
+  margin-right: 16px;
 }
 
 .discount-pct {
+  background-color: #aaccff;
+  color: #1a75ff;
+  width: clamp(31px, 5vw, 61px);
+  height: clamp(5px, 4vw, 31px);
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+  padding: 2px;
 }
-
 .discount-price {
+  text-decoration: line-through;
+  opacity: 30%;
 }
 
 .product-size-container {
@@ -83,12 +97,26 @@ body {
   justify-content: space-between;
 }
 
-li {
-  margin-right: 10px;
-  min-width: 30px;
-  max-width: 30px;
-  background-color: rgb(31, 31, 85);
+.size-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 43px;
   text-align: center;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  margin-right: 16px;
+  margin-top: 19px;
+  width: clamp(30px, 3vw, 48px);
+  height: clamp(30px, 3vw, 48px);
+  color: black;
+}
+
+li:nth-child(2) {
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -133,5 +161,9 @@ li {
     flex-direction: column;
     align-items: start;
     margin-top: 30px;
+  }
+
+  .size-title {
+    text-align: left;
   }
 }
