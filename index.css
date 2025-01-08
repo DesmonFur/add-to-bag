@@ -6,6 +6,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  font-family: "Merriweather", serif;
 }
 
 .medium-txt {
@@ -48,6 +49,7 @@ body {
   font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: bold;
   color: black;
+  text-align: center;
 }
 
 .product-description {
@@ -164,6 +166,9 @@ li:nth-child(2) {
   }
 
   .size-title {
+    text-align: left;
+  }
+  .product-title {
     text-align: left;
   }
 }
